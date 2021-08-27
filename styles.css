@@ -1,0 +1,74 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    border: brown;
+}
+
+
+.heading {
+    color: brown;
+    text-align: center;
+}
+
+.description {
+    font-size: 15px;
+    color: rgb(26, 25, 25);
+    text-align: center;
+}
+
+.billamount {
+    text-align: center;
+    padding: 2rem;
+
+}
+
+/** 1 **/
+.button {
+    color: white;
+    background-color: brown;
+    border: none;
+    text-align: center;
+    align-items: flex-start;
+    width: 5rem;
+    height: 2rem;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin: 1rem;
+
+}
+
+
+.footer .link {
+    color: brown;
+    font-size: 1.2rem;
+    padding-inline-start: 0px;
+    display: inline;
+}
+
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
+    text-align: center;
+    padding: 0rem;
+    ;
+
+}
+
+.list-item-inline {
+    list-style: none;
+    display: inline;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    border-color: brown;
+    display: flex;
+    justify-content: center;
+
+}
