@@ -7,7 +7,7 @@ const noOfNotes =document.querySelectorAll(".no-of-notes");
 const availableNotes = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
 
 clickButton.addEventListener("click", function validateBillAndCashAmount() {
-    message.style.display = "none";
+    hiddeMessage()
 
     if (billAmount.value > 0) {
         if (cashGiven.value >= billAmount.value) {
@@ -33,6 +33,10 @@ function calculateChange(amountToBeReturn) {
         noOfNotes[i].innerText = numberOfNotes;
     }
 
+}
+
+function hiddeMessage(){
+    message.style.display = "none";
 }
 
 function showMessage(msg) {
