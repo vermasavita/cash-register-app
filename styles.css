@@ -1,11 +1,10 @@
 body {
     font-family: 'Courier New', Courier, monospace;
-    border: brown;
+    background-color: rgb(231, 248, 213);
 }
 
 
 .heading {
-    color: brown;
     text-align: center;
 }
 
@@ -17,41 +16,44 @@ body {
 
 .billamount {
     text-align: center;
-    padding: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 /** 1 **/
 .button {
     color: white;
-    background-color: brown;
-    border: none;
+    background-color: rgb(43, 100, 43);
     text-align: center;
-    align-items: flex-start;
-    width: 5rem;
-    height: 2rem;
     font-size: large;
     font-family: 'Courier New', Courier, monospace;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
     cursor: pointer;
-    margin: 1rem;
-
+    margin: 2rem;
+    margin: auto;
+    display: block;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
 }
 
 
 .footer .link {
-    color: brown;
+    color:  rgb(43, 100, 43);
     font-size: 1.2rem;
-    padding-inline-start: 0px;
+    padding-inline-start: 20px;
     display: inline;
+
 }
 
 .list-non-bullet {
     list-style: none;
     padding-inline-start: 0px;
     text-align: center;
-    padding: 0rem;
-    ;
+    padding: 1rem 2rem;
+    padding-top: 8rem;
 
 }
 
@@ -61,14 +63,37 @@ body {
 }
 
 .input {
-    display: flex;
-    justify-content: center;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     height: 40px;
     width: 200px;
-    display: flex;
-    border-color: brown;
-    display: flex;
-    justify-content: center;
+    border-color: rgb(43, 100, 43);
+    margin: auto;
+    display: block;
+}
 
+
+.table {
+    width: 50%;
+  text-align: justify;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.table caption {
+    font-size: x-large; 
+    text-align: center;
+    margin: 1rem auto;
+    font-weight: 500;
+}
+
+th,
+td {
+  border: 2px solid black;
+  width: 0%;
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+.error{
+    text-align: center;
 }
