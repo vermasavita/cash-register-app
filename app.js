@@ -10,8 +10,8 @@ clickButton.addEventListener("click", function validateBillAndCashAmount() {
     hiddeMessage()
 
     if (billAmount.value > 0) {
-        if (cashGiven.value >= billAmount.value) {
-            const amountToBeReturn = cashGiven.value - billAmount.value;
+        if (Number(cashGiven.value) >= Number(billAmount.value)) {
+            const amountToBeReturn = Number(cashGiven.value) - Number(billAmount.value);
             calculateChange(amountToBeReturn);
         } else {
             showMessage("don't be smart, otherwise you have to wash the plates");
