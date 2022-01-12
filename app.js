@@ -6,7 +6,7 @@ const noOfNotes =document.querySelectorAll(".no-of-notes");
 
 const availableNotes = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
 
-clickButton.addEventListener("click", function validateBillAndCashAmount() {
+const validateBillAndCashAmount = () => {
     hiddeMessage()
 
     if (Number(billAmount.value) > 0) {
@@ -21,9 +21,9 @@ clickButton.addEventListener("click", function validateBillAndCashAmount() {
         showMessage("invalid bill amount");
     }
 
-});
+};
 
-function calculateChange(amountToBeReturn) {
+const calculateChange = (amountToBeReturn) => {
     for (let i = 0; i < availableNotes.length;i++ ){
         //const numberOfNotes = Math.trunc(amountToBeReturn / availableNotes[i]);
         const numberOfNotes = Math.trunc(amountToBeReturn / availableNotes[i]);
@@ -35,11 +35,13 @@ function calculateChange(amountToBeReturn) {
 
 }
 
-function hiddeMessage(){
+const hiddeMessage =() =>{
     message.style.display = "none";
 }
 
-function showMessage(msg) {
+const showMessage = (msg) => {
     message.style.display = "block";
     message.innerText = msg;
 }
+
+clickButton.addEventListener("click", validateBillAndCashAmount)
